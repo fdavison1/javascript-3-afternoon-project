@@ -191,10 +191,17 @@ var myCar = {
 */
 
 //Code Here
+function recordCleaner(){
+  for (let key in myCar){
+    if (key === 'accidents'){
+    for (let i = 0; i < 3; i++){
+      myCar[key][i].atFaultForAccident = false
+      }
+    }
+  }
+}
 
-
-
-////////// PROBLEM 5 //////////
+recordCleaner()
 
 // Do not edit the code below.
 var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
