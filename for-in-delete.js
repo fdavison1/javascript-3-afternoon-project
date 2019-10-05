@@ -167,14 +167,21 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
-function deleteTheBig(obj){
-  for (let key in obj){
-    if (obj[key] > 100){
-      delete obj[key]
-    } 
-  } return obj 
-}
+// function delet(obj){
+//   for (let key in obj){
+//     if (obj[key] >= 100){
+//       delete obj[key]
+//   }
+//   return obj
+// }
 
+  for (let key in deleteTheBigNumbers){
+    if (deleteTheBigNumbers[key] > 100){
+      delete deleteTheBigNumbers[key] 
+    }
+  } 
+
+// console.log(obj)
 
 ////////// PROBLEM 7 //////////
 
@@ -191,7 +198,8 @@ function startsWithK(obj){
     if (key[0] === 'k'){
       delete obj[key]
     }
-  } return obj
+  } 
+  return obj
 }
 
 
