@@ -51,6 +51,55 @@ var employees = [
 */
 
 //Code Here
+// const employeeUpdater = employees.filter(function(el, i, arr){
+//     if (firstName === 'Theo'){
+//       delete el 
+//     } else {
+//       if (firstName === 'Lori'){
+//         el.department = 'HR' 
+//       } 
+//       else {
+//         return el
+//       }
+//     } return arr 
+//   }) 
+
+// function employeeUpdater(){
+//   employees.map(function(el, i, arr){
+//     if (el.firstName === 'Lori'){
+//       el.department = 'HR'
+//     } else {
+//       if (el.firstName === 'Theo'){
+//         delete el 
+//       } else {
+//         return el 
+//       }
+//     }
+//     })}
+
+
+function employeeUpdater(){
+  arr = []
+  for (let i = employees.length-1; i >= 0; i--){
+    if (employees[i].firstName === 'Lorie'){
+      employees[i].department = 'HR'
+      arr.push(employees[i])
+    } else {
+      if (employees[i].firstName === 'Theo'){
+        arr.splice[i,1]
+      } else {
+        arr.push(employees[i])
+      }
+    }
+  } 
+  console.log(arr.length)
+  return arr
+}
+
+employeeUpdater()
+  
+
+
 
 
 
