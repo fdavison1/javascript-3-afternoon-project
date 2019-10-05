@@ -96,12 +96,8 @@ function employeeUpdater(){
   return arr
 }
 
-employeeUpdater()
+employeeUpdater() 
   
-
-
-
-
 
 ////////// PROBLEM 2 //////////
 
@@ -118,8 +114,15 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
-
+function removeDuplicates(workplaceAccidents){
+  for (let i=workplaceAccidents.length-1; i>=0; i--){
+    for (let j=i-1; j>=0; j--){
+      if (workplaceAccidents[i] === workplaceAccidents[j]){
+        workplaceAccidents.splice(j,1)
+      }
+    }
+  } return workplaceAccidents
+}
 
 ////////// PROBLEM 3 //////////
 
